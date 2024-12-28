@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- App Header -->
+      <header>
+        <h1>GitHub Profile Finder</h1>
+        <p>Search and bookmark GitHub profiles easily!</p>
+        <button id="toggleTheme" class="theme-btn">🌙 Dark Mode</button>
+      </header>
+
+      <!-- Search Section -->
+      <div class="search">
+        <input
+          type="text"
+          id="searchInput"
+          name="searchInput"
+          placeholder="Type a GitHub username"
+          autofocus
+        />
+        <button class="primary-btn" id="searchBtn">Search</button>
+      </div>
+
+      <!-- Loader or Feedback -->
+      <div id="loading" class="loading"></div>
+
+      <!-- Results Section -->
+      <section id="profileContainer">
+        <p class="hint">Search results will appear here.</p>
+      </section>
+
+      <!-- Favorites Section -->
+      <section id="favoritesContainer">
+        <h2>Bookmarked Profiles</h2>
+        <div id="favorites"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
